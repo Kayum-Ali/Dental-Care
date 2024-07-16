@@ -1,14 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dental Care</title>
+
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- tailwind css daisy ui link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* custom styles here */
+      .montsperrat {
+        font-family: "Montserrat", sans-serif;
+      }
+    </style>
   </head>
-  <body>
+  <body class="montsperrat">
     <header>
-      <nav></nav>
+      <nav class="h-[100px]">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <a href="#home" class="flex items-center justify-center gap-0">
+              <img
+                class="w-[130px]"
+                src="images/logoo-removebg-preview.png"
+                alt=""
+              />
+              <div class="flex flex-row lg:flex-col">
+                <h2 class="font-bold text-xl uppercase">
+                  Dental <span class="text-[#42A6DC]">Care</span>
+                </h2>
+                <p class="italic opacity-80 hidden lg:block">
+                  Keep Healthy smile
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-bold *:uppercase">
+              <li class="text-[#2DAAD3]"><a>Home</a></li>
+              <li class="hover:text-[#2DAAD3]"><a>About us</a></li>
+              <li class="hover:text-[#2DAAD3]"><a>Services</a></li>
+              <li class="hover:text-[#2DAAD3]"><a>Gallery</a></li>
+              <li class="hover:text-[#2DAAD3]"><a>Page</a></li>
+              <li class="hover:text-[#2DAAD3]"><a>Blog</a></li>
+              <li class="hover:text-[#2DAAD3]"><a>Comtact us</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown absolute right-12">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-bold *:uppercase"
+            >
+              <li class="text-[#2DAAD3]"><a>Home</a></li>
+              <li class="hover:text-[#2DAAD3]"><a>About us</a></li>
+              <li class="hover:text-[#2DAAD3]"><a>Services</a></li>
+              <li class="hover:text-[#2DAAD3]"><a>Gallery</a></li>
+              <li class="hover:text-[#2DAAD3]"><a>Page</a></li>
+              <li class="hover:text-[#2DAAD3]"><a>Blog</a></li>
+              <li class="hover:text-[#2DAAD3]"><a>Comtact us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
   </body>
 </html>
