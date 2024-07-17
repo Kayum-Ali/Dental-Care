@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* custom styles here */
 .montsperrat {
   font-family: "Montserrat", sans-serif;
@@ -44,4 +49,193 @@ nav li::after {
 nav li:hover::after {
   width: 100%;
   background: linear-gradient(to right, red, #015cb5);
+}
+
+/* slider style start */
+.slider {
+  position: relative;
+  width: 100%;
+  background: #2c3e58;
+}
+.mySlider {
+  height: 550px;
+  display: none;
+  overflow: hidden;
+}
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 50px;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.1s;
+  user-select: none;
+}
+.prev:hover,
+.next:hover {
+  color: #3498db;
+}
+.next {
+  right: 0;
+}
+.dotsbox {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 20px;
+  cursor: pointer;
+}
+.dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #fff;
+  margin: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.active,
+.dot:hover {
+  background-color: rgb(236, 106, 106);
+  border-color: #3498db;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.txt {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  letter-spacing: 2px;
+  -webkit-animation-name: pos1;
+  -webkit-animation-duration: 2s;
+  animation-name: pos1;
+  animation-duration: 2s;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 55px;
+  font-size: 40px;
+  transform-origin: 50% 50%;
+  opacity: 1;
+}
+@-webkit-keyframes pos1 {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 10%;
+  }
+}
+@keyframes pos1 {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 10%;
+  }
+}
+
+.txt h1 {
+  color: rgb(236, 106, 106);
+  font-weight: bold;
+}
+.txt p {
+  font-style: italic;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.501);
+  font-size: 20px;
+  border-radius: 15px;
+  opacity: 0.8;
+  line-height: 30px;
+}
+.view {
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 14px;
+  border-radius: 15px;
+  overflow: hidden;
+  line-height: 25px;
+  font-weight: bold;
+  border: none;
+  background-color: rgb(218, 101, 126);
+}
+.view:hover {
+  background-color: #3598cc;
+}
+.img {
+  transform: scale(1.5, 1.5);
+  -webkit-animation-name: zoomin;
+  -webkit-animation-duration: 30s;
+  animation-name: zoomin;
+  animation-duration: 30s;
+}
+@-webkit-keyframes zoomin {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
+}
+@keyframes zoomin {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mySlider {
+    height: 500px;
+  }
+  .txt {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .txt p {
+    font-style: italic;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.501);
+    font-size: 16px;
+    border-radius: 15px;
+    opacity: 0.8;
+    line-height: 25px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    /* background-color: rgb(218, 101, 126); */
+  }
 }
