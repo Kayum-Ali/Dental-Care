@@ -148,7 +148,7 @@ nav li:hover::after {
 }
 @-webkit-keyframes pos1 {
   from {
-    left: 50%;
+    left: 15%;
   }
   to {
     left: 10%;
@@ -156,7 +156,7 @@ nav li:hover::after {
 }
 @keyframes pos1 {
   from {
-    left: 50%;
+    left: 15%;
   }
   to {
     left: 10%;
