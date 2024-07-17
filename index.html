@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dental Care</title>
+    <!-- favicon  -->
+    <link
+      rel="shortcut icon"
+      href="images/logoo-removebg-preview.png"
+      type="image/x-icon"
+    />
 
     <!-- font awesome cdn link -->
     <link
@@ -26,32 +32,62 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
-    <style>
-      /* custom styles here */
-      .montsperrat {
-        font-family: "Montserrat", sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="montsperrat">
     <header>
       <nav class="h-[100px]">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
-            <a href="#home" class="flex items-center justify-center gap-0">
+            <div class="dropdown block lg:hidden">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-bold *:uppercase"
+              >
+                <li class="text-[#2DAAD3]"><a>Home</a></li>
+                <li class="hover:text-[#2DAAD3]"><a>About us</a></li>
+                <li class="hover:text-[#2DAAD3]"><a>Services</a></li>
+                <li class="hover:text-[#2DAAD3]"><a>Gallery</a></li>
+                <li class="hover:text-[#2DAAD3]"><a>Page</a></li>
+                <li class="hover:text-[#2DAAD3]"><a>Blog</a></li>
+                <li class="hover:text-[#2DAAD3]"><a>Comtact us</a></li>
+              </ul>
+            </div>
+            <a
+              href="#home"
+              class="flex items-center justify-center gap-0 ml-6 lg:ml-0"
+            >
               <img
-                class="w-[130px]"
+                class="w-[130px] hover:animate-bounce"
                 src="images/logoo-removebg-preview.png"
                 alt=""
               />
               <div class="flex flex-row lg:flex-col">
-                <h2 class="font-bold text-xl uppercase">
-                  Dental <span class="text-[#42A6DC]">Care</span>
+                <h2
+                  id="logo-text"
+                  class="font-bold text-xl uppercase w-[300px] lg:w-auto"
+                >
+                  Dental Care
                 </h2>
-                <p class="italic opacity-80 hidden lg:block">
+                <h2 id="logo-text" class="italic opacity-80 hidden lg:block">
                   Keep Healthy smile
-                </p>
+                </h2>
               </div>
             </a>
           </div>
@@ -66,39 +102,60 @@
               <li class="hover:text-[#2DAAD3]"><a>Comtact us</a></li>
             </ul>
           </div>
-
-          <div class="dropdown absolute right-12">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-bold *:uppercase"
-            >
-              <li class="text-[#2DAAD3]"><a>Home</a></li>
-              <li class="hover:text-[#2DAAD3]"><a>About us</a></li>
-              <li class="hover:text-[#2DAAD3]"><a>Services</a></li>
-              <li class="hover:text-[#2DAAD3]"><a>Gallery</a></li>
-              <li class="hover:text-[#2DAAD3]"><a>Page</a></li>
-              <li class="hover:text-[#2DAAD3]"><a>Blog</a></li>
-              <li class="hover:text-[#2DAAD3]"><a>Comtact us</a></li>
-            </ul>
-          </div>
         </div>
       </nav>
+
+      <!-- banner section start -->
+      <!-- <div class="carousel w-[800px] max-w-4xl">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div> -->
     </header>
   </body>
 </html>

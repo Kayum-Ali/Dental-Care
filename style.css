@@ -1,0 +1,47 @@
+/* custom styles here */
+.montsperrat {
+  font-family: "Montserrat", sans-serif;
+}
+#logo-text {
+  position: relative;
+  width: max-content;
+}
+#logo-text::after {
+  position: absolute;
+  /* margin-bottom: -5px; */
+  height: 3px;
+  width: 10%;
+  /* background-color: red; */
+  content: " ";
+  bottom: 0;
+  left: 0;
+  border-radius: 100px;
+  transition: width 3s ease;
+}
+#logo-text:hover::after {
+  width: 100%;
+  background: linear-gradient(to right, red, #015cb5);
+  color: white;
+}
+
+nav li {
+  /* margin-top: 10px;
+  margin-bottom: 20px; */
+  position: relative;
+  width: max-content;
+}
+nav li::after {
+  position: absolute;
+  height: 2px;
+  width: 10%;
+  content: "";
+  bottom: 0;
+  left: 0;
+  border-radius: 100px;
+  transition: all 1s ease-out;
+}
+
+nav li:hover::after {
+  width: 100%;
+  background: linear-gradient(to right, red, #015cb5);
+}
