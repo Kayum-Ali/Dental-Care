@@ -670,17 +670,17 @@
             Insurence <span class="text-[#B087BE]">Accepted</span>
           </h2>
 
-          <div class="flex justify-between my-10">
-            <div>
-              <img src="images/logo2.jpg" alt="" />
+          <div class="flex justify-between my-10 gap-5 flex-col lg:flex-row">
+            <div class="flex justify-center">
+              <img class="text-center" src="images/logo2.jpg" alt="" />
             </div>
-            <div>
+            <div class="flex justify-center">
               <img src="images/logo3.jpg" alt="" />
             </div>
-            <div>
+            <div class="flex justify-center">
               <img src="images/logo4.jpg" alt="" />
             </div>
-            <div>
+            <div class="flex justify-center">
               <img src="images/logo5.jpg" alt="" />
             </div>
           </div>
@@ -688,27 +688,126 @@
       </section>
 
       <!-- FAQ Section start -->
-      <section>
-        <div class="flex">
-          <div class="blue">
-            <div class="text">
-              <h2>Book an Appointment</h2>
-              <div>
-                <input type="text" placeholder="Name" />
-                <input type="number" placeholder="Phone Number" />
+      <section class="bg-[#F6F6F6]">
+        <div class="flex container flex-col lg:flex-row mx-auto py-12 gap-5">
+          <div class="blue bg-[#5B6EA8] py-10 px-8">
+            <div class="text space-y-7">
+              <h2 class="text-white text-2xl">
+                <span class="font-bold">Book an</span> Appointment
+              </h2>
+              <div class="flex gap-5 flex-col lg:flex-row">
+                <input
+                  class="p-4 outline-none"
+                  type="text"
+                  placeholder="Name"
+                />
+                <input
+                  class="p-4 outline-none"
+                  type="number"
+                  placeholder="Phone Number"
+                />
               </div>
-              <div>
-                <input type="email" placeholder="Email" />
-                <input type="text" placeholder=" Doctor Name" />
+              <div class="flex gap-5 flex-col lg:flex-row">
+                <input
+                  class="p-4 outline-none"
+                  type="email"
+                  placeholder="Email"
+                />
+                <input
+                  class="p-4 outline-none"
+                  type="text"
+                  placeholder=" Doctor Name"
+                />
               </div>
-              <div>
-                <input type="date" placeholder="Date" />
-                <input type="time" placeholder="Time" />
+              <div class="flex gap-5 flex-col lg:flex-row">
+                <input
+                  class="p-4 outline-none"
+                  type="text"
+                  placeholder="Date"
+                />
+                <input class="p-4 outline-none" type="" placeholder="Time" />
+              </div>
+              <div class="text-center lg:text-start">
+                <button
+                  class="uppercase text-white bg-[#66abd3] hover:bg-[#3592c7] w-1/2 lg:w-auto px-5 py-2.5 rounded-[35px] font-bold"
+                >
+                  Make An Appointment
+                </button>
               </div>
             </div>
           </div>
 
-          <div class="content"></div>
+          <div class="content">
+            <h2 class="text-3xl text-[#1F81D2] text-center p-4 lg:text-start">
+              <span class="font-bold text-black">Have Some</span> Questions?
+            </h2>
+
+            <!-- FAQ -->
+
+            <div class="p-4">
+              <div
+                class="collapse collapse-plus bg-white my-3 p-3 border-2 border-[#c8c4c4e4]"
+              >
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title font-medium">
+                  How Do I Make a appointment?
+                </div>
+                <div class="collapse-content">
+                  <p class="text-[#8E8D8D] opacity-70">
+                    Make an appointment I'd like to make an appointment with Dr.
+                    Evans, please. She had to cancel her dental appointment. I
+                    have an appointment to see Ms.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="collapse collapse-plus bg-white my-3 p-3 border-2 border-[#c8c4c4e4]"
+              >
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-medium">
+                  Can i replase my teeth?
+                </div>
+                <div class="collapse-content">
+                  <p class="text-[#8E8D8D] opacity-70">
+                    Yes, it is possible to get a whole new set of teeth. This is
+                    often the route chosen by those who have been dealing with
+                    dental distress for years.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="collapse collapse-plus bg-white my-3 p-3 border-2 border-[#c8c4c4e4]"
+              >
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-medium">
+                  How much do you one setting cost?
+                </div>
+                <div class="collapse-content">
+                  <p class="text-[#8E8D8D] opacity-70">
+                    A simple way to calculate cost of goods sold is to add up
+                    your raw materials or product costs, wages, benefits,
+                    amortization expenses and factory overhead.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="collapse collapse-plus bg-white my-3 p-3 border-2 border-[#c8c4c4e4]"
+              >
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-medium">
+                  Does the Clinic offer any discount coupons ?
+                </div>
+                <div class="collapse-content">
+                  <p class="text-[#8E8D8D] opacity-70">
+                    Receive 15% off when you sign up for Clinique Smart Rewards.
+                    Offer available to U.S. residents only. Limit one offer code
+                    per person and per order. Cannot be combined with any other
+                    offer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
