@@ -35,8 +35,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="montsperrat">
-    <header>
-      <nav class="h-[100px] container mx-auto">
+    <header class="">
+      <nav class="h-[100px] container mx-auto z-40">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <div class="dropdown block lg:hidden">
@@ -491,7 +491,9 @@
 
       <section class="bg-[#6771BA]">
         <!-- get in touch section start -->
-        <div class="flex container mx-auto justify-around flex-col lg:flex-row py-[35px]">
+        <div
+          class="flex container mx-auto justify-around flex-col lg:flex-row py-[35px]"
+        >
           <h2
             class="text-xl lg:text-2xl text-center mb-3 lg:mb-0 text-white font-bold"
           >
@@ -570,68 +572,145 @@
       </section>
 
       <!-- letest news section start -->
-        <section class="bg-[#F6F6F6]">
-          <div class="container mx-auto py-12">
-            <h2 class=" text-black font-bold text-center lg:text-start  text-3xl">
-              Latest <span class="text-[#336BBE]">News</span>
+      <section class="bg-[#F6F6F6]">
+        <div class="container mx-auto py-12">
+          <h2 class="text-black font-bold text-center lg:text-start text-3xl">
+            Latest <span class="text-[#336BBE]">News</span>
+          </h2>
+        </div>
+
+        <!-- letest news card  -->
+        <div class="flex gap-7 container mx-auto pb-12 flex-col lg:flex-row">
+          <div
+            class="lg:w-[30%] w-full border-b-2 border-b-violet-600 rounded-b-xl"
+          >
+            <img src="images/cosmetic.jpg" alt="" />
+            <h2 class="font-bold py-5">
+              Green Dentistry: A Guide for Dentists and Patients
             </h2>
+            <p class="opacity-70 pb-5">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusa nt ium dolor emque lauud adantium totam perspiciatis unde
+              omnis...
+            </p>
+            <a href="#" class="text-[#336BBE] hover:text-black font-bold"
+              >Read More...</a
+            >
+          </div>
+          <div
+            class="lg:w-[30%] w-full border-b-2 border-b-violet-600 rounded-b-xl"
+          >
+            <img src="images/yellow.jpg" alt="" />
+            <h2 class="font-bold py-5">
+              Yellow Dentistry: A Guide for Dentists and Patients
+            </h2>
+            <p class="opacity-70 pb-5">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusa nt ium dolor emque lauud adantium totam perspiciatis unde
+              omnis...
+            </p>
+            <a href="#" class="text-[#336BBE] hover:text-black font-bold"
+              >Read More...</a
+            >
+          </div>
+
+          <div class="lg:w-[30%] w-full">
+            <div
+              class="border-[1.5px] border-[#c3c0c078] hover:bg-[#333743] hover:text-white p-5"
+            >
+              <h2 class="font-bold mb-3">
+                Love Your Heart-Take Care of your Teeth
+              </h2>
+              <div class="flex justify-between">
+                <p>7 years ago</p>
+                <p>Teeth,Whitening</p>
+              </div>
             </div>
 
-           <!-- letest news card  -->
-            <div class="flex gap-7 container mx-auto pb-10 flex-col lg:flex-row">
-                <div class="lg:w-[30%] w-full">
-                  <img src="images/cosmetic.jpg" alt="">
-                  <h2 class="font-bold py-5">Green Dentistry: A Guide for Dentists and Patients</h2>
-                  <p class="opacity-70 pb-5">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa nt ium dolor emque lauud adantium totam perspiciatis unde omnis...
-
-                  </p>
-                  <a href="#" class="text-[#336BBE] hover:text-black font-bold">Read More...</a>
-
-                </div>
-                <div class="lg:w-[30%] w-full">
-                  <img src="images/cosmetic.jpg" alt="">
-                  <h2 class="font-bold py-5">Green Dentistry: A Guide for Dentists and Patients</h2>
-                  <p class="opacity-70 pb-5">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa nt ium dolor emque lauud adantium totam perspiciatis unde omnis...
-
-                  </p>
-                  <a href="#" class="text-[#336BBE] hover:text-black font-bold">Read More...</a>
-
-                </div>
-
-
-                <div class="lg:w-[30%] w-full ">
-                   <div class="border-[1.5px] border-[#c3c0c078] hover:bg-[#333743] hover:text-white p-5">
-                       <h2 class="font-bold mb-3">Love Your Heart-Take Care of your Teeth</h2>
-                       <div class="flex justify-between">
-                          <p>7 years ago</p>
-                          <p>Teeth,Whitening</p>
-                       </div>
-                   </div>
-
-
-                  <div class="border-[1.5px] border-t-0 border-[#c3c0c078] p-5 hover:bg-[#333743] hover:text-white">
-                       <h2 class="font-bold mb-3">Oral health : A Window to your oral health - part ||</h2>
-                       <div class="flex justify-between">
-                          <p>7 years ago</p>
-                          <p>Teeth,Whitening</p>
-                       </div>
-                   </div>
-
-                   <div class="border-[1.5px] border-[#c3c0c078] p-5 hover:bg-[#333743] hover:text-white">
-                       <h2 class="font-bold mb-3 capitalize">How to Prepare your child to visit the dentist</h2>
-                       <div class="flex justify-between">
-                          <p>7 years ago</p>
-                          <p>Teeth,Whitening</p>
-                       </div>
-                   </div>
-
-                   <div class="border-[1.5px] border-[#c3c0c078] p-5 hover:bg-[#333743] ">
-                      <h2 class="text-[#336BBE] font-bold hover:text-white">Read All News</h2>
-                   </div>
-
-                </div>
-               
+            <div
+              class="border-[1.5px] border-t-0 border-[#c3c0c078] p-5 hover:bg-[#333743] hover:text-white"
+            >
+              <h2 class="font-bold mb-3">
+                Oral health : A Window to your oral health - part ||
+              </h2>
+              <div class="flex justify-between">
+                <p>7 years ago</p>
+                <p>Teeth,Whitening</p>
+              </div>
             </div>
+
+            <div
+              class="border-[1.5px] border-[#c3c0c078] p-5 hover:bg-[#333743] hover:text-white"
+            >
+              <h2 class="font-bold mb-3 capitalize">
+                How to Prepare your child to visit the dentist
+              </h2>
+              <div class="flex justify-between">
+                <p>7 years ago</p>
+                <p>Teeth,Whitening</p>
+              </div>
+            </div>
+
+            <div
+              class="border-[1.5px] border-[#c3c0c078] p-5 hover:bg-[#333743]"
+            >
+              <h2 class="text-[#336BBE] font-bold hover:text-white">
+                Read All News
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- insurence accepted section start -->
+
+      <section>
+        <div class="container mx-auto py-12">
+          <h2 class="text-black font-bold text-center lg:text-start text-3xl">
+            Insurence <span class="text-[#B087BE]">Accepted</span>
+          </h2>
+
+          <div class="flex justify-between my-10">
+            <div>
+              <img src="images/logo2.jpg" alt="" />
+            </div>
+            <div>
+              <img src="images/logo3.jpg" alt="" />
+            </div>
+            <div>
+              <img src="images/logo4.jpg" alt="" />
+            </div>
+            <div>
+              <img src="images/logo5.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section start -->
+      <section>
+        <div class="flex">
+          <div class="blue">
+            <div class="text">
+              <h2>Book an Appointment</h2>
+              <div>
+                <input type="text" placeholder="Name" />
+                <input type="number" placeholder="Phone Number" />
+              </div>
+              <div>
+                <input type="email" placeholder="Email" />
+                <input type="text" placeholder=" Doctor Name" />
+              </div>
+              <div>
+                <input type="date" placeholder="Date" />
+                <input type="time" placeholder="Time" />
+              </div>
+            </div>
+          </div>
+
+          <div class="content"></div>
+        </div>
+      </section>
     </main>
     <script src="index.js"></script>
   </body>
