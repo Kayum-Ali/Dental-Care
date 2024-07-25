@@ -36,7 +36,7 @@
   </head>
   <body class="montsperrat">
     <header class="">
-      <nav class="h-[100px] container mx-auto z-40">
+      <nav id="navbar" class="h-[100px] container mx-auto z-40">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <div class="dropdown block lg:hidden">
@@ -450,7 +450,7 @@
 
       <!-- SuccessfullStory Section start -->
       <section class="bg-[#42445B]">
-        <div class="container mx-auto lg:relative static">
+        <div class="container mx-auto">
           <div class="py-8 text-white px-5 lg:px-0">
             <span class="font-bold text-2xl mr-3"> Successful Story</span>
             <small class="italic font-bold">(Alen and Marry)</small>
@@ -468,7 +468,7 @@
             </div>
 
             <div
-              class="bg-[#6A518D] lg:w-[600px] lg:h-[320px] px-8 text-white opacity-80 z-10 my-5 lg:my-0 py-12 lg:absolute static md:right-[5%] lg:left-[45%]"
+              class="bg-[#6A518D] lg:w-[600px] lg:h-[320px] px-10 text-white opacity-80 z-10 my-5 lg:my-0 py-12 lg:relative static right-10"
             >
               <div>
                 <p>
@@ -697,35 +697,39 @@
               </h2>
               <div class="flex gap-5 flex-col lg:flex-row">
                 <input
-                  class="p-4 outline-none"
+                  class="p-4 outline-none focus:text-purple-700 focus:border-purple-700 focus:border-2 overflow-hidden"
                   type="text"
                   placeholder="Name"
                 />
                 <input
-                  class="p-4 outline-none"
+                  class="p-4 outline-none focus:text-purple-700 focus:border-purple-700 focus:border-2 overflow-hidden"
                   type="number"
                   placeholder="Phone Number"
                 />
               </div>
               <div class="flex gap-5 flex-col lg:flex-row">
                 <input
-                  class="p-4 outline-none"
+                  class="p-4 outline-none focus:text-purple-700 focus:border-purple-700 focus:border-2 overflow-hidden"
                   type="email"
                   placeholder="Email"
                 />
                 <input
-                  class="p-4 outline-none"
+                  class="p-4 outline-none focus:text-purple-700 focus:border-purple-700 focus:border-2 overflow-hidden"
                   type="text"
                   placeholder=" Doctor Name"
                 />
               </div>
               <div class="flex gap-5 flex-col lg:flex-row">
                 <input
-                  class="p-4 outline-none"
+                  class="p-4 outline-none focus:text-purple-700 focus:border-purple-700 focus:border-2 overflow-hidden"
                   type="text"
                   placeholder="Date"
                 />
-                <input class="p-4 outline-none" type="" placeholder="Time" />
+                <input
+                  class="p-4 outline-none focus:text-purple-700 focus:border-purple-700 focus:border-2 overflow-hidden"
+                  type=""
+                  placeholder="Time"
+                />
               </div>
               <div class="text-center lg:text-start">
                 <button
@@ -811,6 +815,101 @@
         </div>
       </section>
     </main>
+
+    <!-- footer section start  -->
+    <footer class="bg-[#27282D] py-16">
+      <section class="container mx-auto">
+        <div class="flex gap-6 flex-col lg:flex-row p-4 lg:p-0">
+          <!-- 1st div -->
+          <div class="text-[#676973] w-full lg:w-[25%]">
+            <img src="images/footer_img.png" alt="" />
+            <p class="my-8">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusa nt ium dolor emque lauud adantium totam perspiciatis unde
+            </p>
+            <button class="text-[#3DB0DF] hover:opacity-85 hover:text-[15px]">
+              Read More &#10095;&#10095;
+            </button>
+          </div>
+          <!-- 2nd div -->
+          <div class="w-full lg:w-[25%]">
+            <h2 class="text-white font-bold footer-title">Quick Links</h2>
+            <div class="text-[#676973] mt-8">
+              <a href="#">Home Four</a>
+              <a href="#">About Us</a>
+              <a href="#">Get Appointment</a>
+              <a href="#">Faq</a>
+              <a href="#" class="border-0">Contact us</a>
+            </div>
+          </div>
+          <!-- 3rd div -->
+          <div class="w-full lg:w-[25%]">
+            <h2 class="text-white font-bold footer-title">Services</h2>
+            <div class="text-[#676973] mt-8">
+              <a href="#">Dental Implant</a>
+              <a href="#">Teeth Whitening</a>
+              <a href="#">Dental Bridges</a>
+              <a href="#">Cosmetic Dentistry</a>
+              <a href="#" class="border-0">Root Treatment</a>
+            </div>
+          </div>
+          <!-- 4th div -->
+          <div class="w-full lg:w-[25%]">
+            <h2 class="text-white font-bold footer-title">
+              Subscribe Newsletter
+            </h2>
+            <div class="text-[#676973] mt-8">
+              <p>Get latest updates and offers.</p>
+              <div class="my-6 flex gap-1">
+                <input
+                  class="p-3 rounded-lg w-full outline-none focus:border-[#3DB0DF] focus:border-2 overflow-hidden"
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="Enter Your Email Address"
+                />
+                <i
+                  class="fa-regular fa-envelope text-2xl bg-[#3DB0DF] text-white px-3 py-2 rounded-lg"
+                ></i>
+              </div>
+            </div>
+
+            <div
+              class="text-[#676973] flex text-xl text-center lg:text-start justify-center lg:justify-around *:p-3 *:border-[1px] gap-4 *:rounded-full"
+            >
+              <i
+                class="fa-brands fa-twitter bg-transparent hover:border-[#3DB0DF]"
+              ></i>
+              <i
+                class="fa-brands fa-facebook bg-transparent hover:border-[#3DB0DF]"
+              ></i>
+              <i
+                class="fa-brands fa-linkedin bg-transparent hover:border-[#3DB0DF]"
+              ></i>
+              <i
+                class="fa-brands fa-google bg-transparent hover:border-[#3DB0DF]"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <section class="bg-[#232427] p-12">
+      <div
+        class="flex flex-col lg:flex-row text-center space-y-3 lg:space-y-0 container mx-auto text-[#676973] justify-between"
+      >
+        <h2>Copyright &copy; Dental Care 2024. All rights reserved.</h2>
+
+        <div>
+          <h2>Developed by: <a href="KayumXTen.com">Kayum X Ten</a></h2>
+          <a
+            href="#navbar"
+            class="fa-solid fa-angles-up bg-[#6771BA] scroll-smooth p-2 rounded-full text-white flex fixed bottom-0 right-8 justify-end"
+          ></a>
+        </div>
+      </div>
+    </section>
+
     <script src="index.js"></script>
   </body>
 </html>

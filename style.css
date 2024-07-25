@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body::selection {
+  background-color: yellow;
+  color: black;
+}
 /* custom styles here */
 .montsperrat {
   font-family: "Montserrat", sans-serif;
@@ -200,6 +204,41 @@ nav li:hover::after {
   animation-name: zoomin;
   animation-duration: 30s;
 }
+.footer-title {
+  position: relative;
+  width: max-content;
+  padding-bottom: 20px;
+  color: white;
+  /* margin-top: 15px; */
+  font-size: 20px;
+}
+.footer-title::after {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 3px;
+  background-color: #667dbe;
+  bottom: 0;
+  left: 0;
+}
+.footer-title:hover::after {
+  /* position: absolute; */
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #667dbe;
+  bottom: 0;
+  left: 0;
+}
+
+footer a {
+  display: block;
+  border-bottom: 1px solid white;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-right: 1px dashed #3db0df;
+}
+
 @-webkit-keyframes zoomin {
   from {
     transform: scale(1, 1);
